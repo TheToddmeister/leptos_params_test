@@ -5,7 +5,7 @@ async fn main() {
     use axum::Router;
     use leptos::prelude::*;
     use leptos_axum::{generate_route_list, LeptosRoutes};
-    use {{crate_name}}::app::*;
+    use test::app::*;
 
     let conf = get_configuration(None).unwrap();
     let addr = conf.leptos_options.site_addr;

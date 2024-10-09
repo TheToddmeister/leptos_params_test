@@ -4,6 +4,7 @@ use leptos_router::{
     components::{Route, Router, Routes},
     StaticSegment,
 };
+use crate::test::StationInputForm;
 
 pub fn shell(options: LeptosOptions) -> impl IntoView {
     view! {
@@ -41,6 +42,8 @@ pub fn App() -> impl IntoView {
             <main>
                 <Routes fallback=|| "Page not found.".into_view()>
                     <Route path=StaticSegment("") view=HomePage/>
+                    <Route path=StaticSegment("/test") view=StationInputForm/>
+
                 </Routes>
             </main>
         </Router>
